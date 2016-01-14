@@ -1,0 +1,19 @@
+once the admin makes a profile non-active, there is no auto logout.
+once the admin makes a profile not-admin, there is no auto logout.
+
+
+files checked:
+forms.py
+vajiramandraci_com.py
+
+NOTE: change permissions on the above two files from 777!!
+
+import ipdb; ipdb.set_trace()
+
+next time you do a git pull, do it on a different branch
+
+BUILDING CSV validation:
+=======================
+built a custom validator in the newsfeed tag file.
+then altered the psql column to make it a char field instead of integer. Also wrote a migration file so that this can be done in prod easily.
+Finally modified the data type to CharField in the models file.
